@@ -1,0 +1,434 @@
+{
+  "@graph" : [ {
+    "@id" : "_:b1",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "schema:Organization", "schema:Person" ]
+    }
+  }, {
+    "@id" : "http://samanasara.org/ontology/VinayaStudiesOntology",
+    "@type" : "owl:Ontology",
+    "versionInfo" : "Created with TopBraid Composer"
+  }, {
+    "@id" : "vso:AuxiliaryMaterial",
+    "@type" : "owl:Class",
+    "comment" : "Auxiliary material is a piece of text, image, or other informational structure that relates to a Vinaya but is not a part of the Vinaya Canons.",
+    "isDefinedBy" : "<http://samanasara.org/ontology/AuxiliaryMaterial>",
+    "label" : "AuxiliaryMaterial",
+    "subClassOf" : "schema:CreativeWork"
+  }, {
+    "@id" : "vso:DeprecatedVinayaRule",
+    "@type" : "owl:Class",
+    "comment" : "DeprecatedVinayaRule is a rule that was made and then later rescinded or modified by the Buddha.",
+    "isDefinedBy" : "<http://samanasara.org/ontology/DeprecatedVinayaRule>",
+    "label" : "DeprecatedVinayaRule",
+    "subClassOf" : "vso:VinayaRule"
+  }, {
+    "@id" : "vso:FactorsOfRule",
+    "@type" : "owl:Class",
+    "comment" : "Each rule in the Vinaya can be broken into concepts that factor into how and when a rule is broken.  The Factors of Rule delineates these concepts so one can know the ways it can be broken.\n",
+    "isDefinedBy" : "<http://samanasara.org/ontology/FactorsOfRule>",
+    "label" : "FactorsOfRule",
+    "subClassOf" : "vso:AuxiliaryMaterial"
+  }, {
+    "@id" : "vso:KhandakaRule",
+    "@type" : "owl:Class",
+    "comment" : "KhandhakaRule is a rule given in a Khandaka.  A KhandakaRule may be the final version or a version that is further developed.",
+    "isDefinedBy" : "<http://samanasara.org/ontology/KhandakaRule>",
+    "label" : "KhandakaRule",
+    "subClassOf" : "vso:VinayaRule"
+  }, {
+    "@id" : "vso:PatimokkhaRule",
+    "@type" : "owl:Class",
+    "comment" : "PatimokkhaRule is a single rule given in a Pātimokkha and generally matches the final rule in the associated Vibhaṅgha.",
+    "isDefinedBy" : "<http://samanasara.org/ontology/PatimokkhaRule>",
+    "label" : "PatimokkhaRule",
+    "subClassOf" : "vso:VinayaRule"
+  }, {
+    "@id" : "vso:Summary",
+    "@type" : "owl:Class",
+    "comment" : "A summary of a VinayaSegment.  May contain origin story and first offender etc. when it is about a Vinaya Rule.",
+    "isDefinedBy" : "<http://samanasara.org/ontology/Summary>",
+    "label" : "Summary",
+    "subClassOf" : "vso:AuxiliaryMaterial"
+  }, {
+    "@id" : "vso:TranslationText",
+    "@type" : "owl:Class",
+    "comment" : "TranslationText holds the translation of a VinayaSegment from a VinayaText.  It is likely to be in a modern language.  Ex: English, Thai, German, Klingon ...\n",
+    "isDefinedBy" : "<http://samanasara.org/ontology/TranslationText>",
+    "label" : "Summary",
+    "subClassOf" : "vso:AuxiliaryMaterial"
+  }, {
+    "@id" : "vso:VinayaOffenseClass",
+    "@type" : "owl:Class",
+    "comment" : "The class (severity) of Vinaya offenses.  Ex: a rule that when broken is grounds for expulsion vs one that is only confessable. ",
+    "label" : "VinayaOffenseClass",
+    "subClassOf" : "schema:Thing"
+  }, {
+    "@id" : "vso:VinayaRule",
+    "@type" : "owl:Class",
+    "comment" : "Vinaya Rules are rules for monastics set down in one of the sections of the Vinaya, mainly the Khandhakas and Pātimokkha.",
+    "isDefinedBy" : "<http://samanasara.org/ontology/VinayaRule>",
+    "label" : "VinayaRule",
+    "subClassOf" : "schema:Thing"
+  }, {
+    "@id" : "vso:VinayaSegment",
+    "@type" : "owl:Class",
+    "comment" : "VinayaSegment is a segment from a VinayaText that one might want to treat as a concept.  It could be at the level of of a particular background story and rule in a Khandhaka or the Khandakas as a whole or a single line of text, such as a PatimokkhaRule.\n",
+    "isDefinedBy" : "<http://samanasara.org/ontology/VinayaSegment>",
+    "label" : "VinayaSegment",
+    "subClassOf" : "vso:VinayaText"
+  }, {
+    "@id" : "vso:VinayaText",
+    "@type" : "owl:Class",
+    "comment" : "VinayaText is the text manuscript on which translations are based. For the Canon, they are generally in Pāli, Sanskrit, Classical Chinese or Tibetian. Commentaries and translations may be in other languages.\n",
+    "isDefinedBy" : "<http://samanasara.org/ontology/VinayaText>",
+    "label" : "VinayaText",
+    "subClassOf" : "schema:CreativeWork"
+  }, {
+    "@id" : "vso:VinayaTopic",
+    "@type" : "owl:Class",
+    "comment" : "The subject matter addressed in the Vinaya that can be at any level of granularity.  Examples: \"The Five Tonics\", \"Asking for Ghee\", \"Shoes\", \"Lying\". ",
+    "label" : "VinayaTopic",
+    "subClassOf" : "schema:Thing"
+  }, {
+    "@id" : "vso:VinayaTradition",
+    "@type" : "owl:Class",
+    "comment" : "VinayaTradition is the class for the traditions that generally follow a particular Vinaya.  Ex: Pali Text follows the Pali Text Vinaya, Dharmaguptaka the Dharmaguptaka",
+    "isDefinedBy" : "<http://samanasara.org/ontology/VinayaTradition>",
+    "label" : "VinayaTradition",
+    "subClassOf" : "schema:Thing"
+  }, {
+    "@id" : "schema:Comment",
+    "@type" : "owl:Class",
+    "comment" : "A comment on an item - for example, a comment on a blog post. The comment's content is expressed via the text property, and its topic via about, properties shared with all CreativeWorks.",
+    "isDefinedBy" : "<http://samanasara.org/ontology/Comment>",
+    "label" : "Comment",
+    "subClassOf" : "schema:CreativeWork"
+  }, {
+    "@id" : "schema:CreativeWork",
+    "@type" : "owl:Class",
+    "comment" : "The most generic kind of creative work, including books, movies, photographs, software programs, etc.",
+    "isDefinedBy" : "<https://samanasara.org/Ontology/CreativeWork>",
+    "label" : "name",
+    "subClassOf" : "schema:Thing"
+  }, {
+    "@id" : "schema:ImageObject",
+    "@type" : "owl:Class",
+    "comment" : "An image file.\n",
+    "isDefinedBy" : "<http://samanasara.org/ontology/ImageObject>",
+    "label" : "ImageObject",
+    "subClassOf" : "schema:MediaObject"
+  }, {
+    "@id" : "schema:MediaObject",
+    "@type" : "owl:Class",
+    "comment" : "A media object, such as an image, video, audio, or text object embedded in a web page or a downloadable dataset i.e. DataDownload. Note that a creative work may have many media objects associated with it on the same web page. For example, a page about a single song (MusicRecording) may have a music video (VideoObject), and a high and low bandwidth audio stream (2 AudioObject's).",
+    "isDefinedBy" : "<http://samanasara.org/ontology/MediaObject>",
+    "label" : "MediaObject",
+    "subClassOf" : "schema:CreativeWork"
+  }, {
+    "@id" : "schema:Organization",
+    "@type" : "owl:Class",
+    "comment" : "An organization such as a school, NGO, corporation, club, etc.",
+    "isDefinedBy" : "<http://samanasara.org/ontology/Organization>",
+    "label" : "Organization",
+    "subClassOf" : "schema:Thing"
+  }, {
+    "@id" : "schema:Person",
+    "@type" : "owl:Class",
+    "comment" : "A person (alive, dead, undead, or fictional).",
+    "isDefinedBy" : "<http://samanasara.org/ontology/Person>",
+    "label" : "Person",
+    "subClassOf" : "schema:Thing"
+  }, {
+    "@id" : "schema:Thing",
+    "@type" : "owl:Class",
+    "comment" : "The most generic type of item.",
+    "isDefinedBy" : "<https://samanasara.org/Ontology/Thing>",
+    "label" : "Thing",
+    "subClassOf" : "owl:Thing"
+  }, {
+    "@id" : "schema:about",
+    "@type" : "owl:InverseFunctionalProperty",
+    "comment" : "The subject matter of the content.",
+    "domain" : "schema:CreativeWork",
+    "isDefinedBy" : "<https://samanasara.org/Ontology/about>",
+    "label" : "about",
+    "range" : "schema:Thing"
+  }, {
+    "@id" : "schema:abstract",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : "An abstract is a short description that summarizes a CreativeWork.",
+    "domain" : "schema:CreativeWork",
+    "isDefinedBy" : "<http://samanasara.org/ontology/abstract>",
+    "label" : "Aniyata",
+    "range" : "xsd:string"
+  }, {
+    "@id" : "schema:additionalName",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : "An additional name for a Person, can be used for a middle name.",
+    "domain" : "schema:Person",
+    "isDefinedBy" : "<http://samanasara.org/ontology/additionalName>",
+    "label" : "additionalName",
+    "range" : "xsd:string"
+  }, {
+    "@id" : "schema:affiliation",
+    "@type" : "owl:ObjectProperty",
+    "comment" : "An organization that this person is affiliated with. For example, a school/university, a club, or a team.",
+    "domain" : "schema:Person",
+    "isDefinedBy" : "<http://samanasara.org/ontology/affiliation>",
+    "label" : "affiliation",
+    "range" : "schema:Organization"
+  }, {
+    "@id" : "schema:alternateName",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : "An alias for the item.",
+    "domain" : "schema:Thing",
+    "isDefinedBy" : "<http://samanasara.org/ontology/alternateName>",
+    "label" : "alternateName",
+    "range" : "xsd:string"
+  }, {
+    "@id" : "schema:author",
+    "@type" : "owl:ObjectProperty",
+    "comment" : "The author of this content or rating.",
+    "domain" : "schema:CreativeWork",
+    "isDefinedBy" : "<http://samanasara.org/ontology/author>",
+    "label" : "author",
+    "range" : [ "schema:Person", "schema:Organization" ]
+  }, {
+    "@id" : "schema:caption",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : "The caption for this object.",
+    "domain" : "schema:ImageObject",
+    "isDefinedBy" : "<http://samanasara.org/ontology/caption>",
+    "label" : "caption",
+    "range" : "xsd:string"
+  }, {
+    "@id" : "schema:comment",
+    "@type" : "owl:ObjectProperty",
+    "comment" : "Comments, typically from users.",
+    "domain" : "schema:CreativeWork",
+    "isDefinedBy" : "<http://samanasara.org/ontology/comment>",
+    "label" : "parentItem",
+    "range" : "schema:Comment"
+  }, {
+    "@id" : "schema:contentUrl",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : "Actual bytes of the media object, for example the image file or video file.",
+    "domain" : "schema:MediaObject",
+    "isDefinedBy" : "<http://samanasara.org/ontology/contentUrl>",
+    "label" : "contentUrl",
+    "range" : "xsd:string"
+  }, {
+    "@id" : "schema:email",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : "Email address.",
+    "domain" : [ "schema:Person", "schema:Organization" ],
+    "isDefinedBy" : "<http://samanasara.org/ontology/email>",
+    "label" : "email",
+    "range" : "xsd:string"
+  }, {
+    "@id" : "schema:familyName",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : "Family name. In the U.S., the last name of a Person.",
+    "domain" : "schema:Person",
+    "isDefinedBy" : "<http://samanasara.org/ontology/familyName>",
+    "label" : "familyName",
+    "range" : "xsd:string"
+  }, {
+    "@id" : "schema:givenName",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : "Given name. In the U.S., the first name of a Person.",
+    "domain" : "schema:Person",
+    "isDefinedBy" : "<http://samanasara.org/ontology/givenName>",
+    "label" : "familyName",
+    "range" : "xsd:string"
+  }, {
+    "@id" : "schema:hasPart",
+    "@type" : "owl:InverseFunctionalProperty",
+    "comment" : "Indicates an item or CreativeWork that is part of this item, or CreativeWork (in some sense). Inverse property: isPartOf",
+    "domain" : "schema:CreativeWork",
+    "isDefinedBy" : "<http://samanasara.org/ontology/hasPart>",
+    "label" : "hasPart",
+    "range" : "schema:CreativeWork",
+    "inverseOf" : "schema:isPartOf"
+  }, {
+    "@id" : "schema:honorificPrefix",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : "An honorific prefix preceding a Person's name such as Dr/Mrs/Mr.",
+    "domain" : "schema:Person",
+    "isDefinedBy" : "<http://samanasara.org/ontology/honorificPrefix>",
+    "label" : "honorificPrefix",
+    "range" : "xsd:string"
+  }, {
+    "@id" : "schema:honorificSuffix",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : "An honorific suffix following a Person's name such as M.D./PhD/MSCSW.",
+    "domain" : "schema:Person",
+    "isDefinedBy" : "<http://samanasara.org/ontology/honorificSuffix>",
+    "label" : "honorificSuffix",
+    "range" : "xsd:string"
+  }, {
+    "@id" : "schema:inLanguage",
+    "@type" : "rdf:Property",
+    "comment" : "The language of the content or performance or used in an action. Please use one of the language codes from the IETF BCP 47 standard. ",
+    "domain" : "schema:CreativeWork",
+    "label" : "inLanguage",
+    "range" : "xsd:string"
+  }, {
+    "@id" : "schema:isPartOf",
+    "@type" : "owl:InverseFunctionalProperty",
+    "comment" : "Indicates an item or CreativeWork that this item, or CreativeWork (in some sense), is part of.\nInverse property: hasPart",
+    "domain" : "schema:CreativeWork",
+    "isDefinedBy" : "<http://samanasara.org/ontology/isPartOf>",
+    "label" : "hasPart",
+    "range" : "schema:CreativeWork"
+  }, {
+    "@id" : "schema:mainEntity",
+    "@type" : "owl:ObjectProperty",
+    "comment" : "Indicates the primary entity described in some page or other CreativeWork.\nInverse-property: mainEntityOfPage",
+    "domain" : "schema:CreativeWork",
+    "isDefinedBy" : "<http://samanasara.org/ontology/mainEntity>",
+    "label" : "parentItem",
+    "range" : "schema:Thing",
+    "inverseOf" : "schema:mainEntityOfPage"
+  }, {
+    "@id" : "schema:mainEntityOfPage",
+    "@type" : "owl:ObjectProperty",
+    "comment" : "Indicates a page (or other CreativeWork) for which this thing is the main entity being described. See background notes for details.\nInverse-property: mainEntity",
+    "domain" : "owl:Thing",
+    "isDefinedBy" : "<http://samanasara.org/ontology/mainEntityOfPage>",
+    "label" : "mainEntityOfPage",
+    "range" : "schema:CreativeWork"
+  }, {
+    "@id" : "schema:name",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : "The name of the item.",
+    "domain" : "schema:Thing",
+    "isDefinedBy" : "<https://samanasara.org/Ontology/name>",
+    "label" : "name",
+    "range" : "xsd:string"
+  }, {
+    "@id" : "schema:parentItem",
+    "@type" : "owl:ObjectProperty",
+    "comment" : "The parent of a question, answer or item in general",
+    "domain" : "schema:Comment",
+    "isDefinedBy" : "<http://samanasara.org/ontology/parentItem>",
+    "label" : "parentItem",
+    "range" : "schema:Comment"
+  }, {
+    "@id" : "schema:position",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : "The position of an item in a series or sequence of items.",
+    "domain" : "schema:CreativeWork",
+    "isDefinedBy" : "<http://samanasara.org/ontology/position>",
+    "label" : "position",
+    "range" : "xsd:string"
+  }, {
+    "@id" : "schema:subjectOf",
+    "@type" : "owl:InverseFunctionalProperty",
+    "comment" : "A CreativeWork or Event about this Thing.\nInverse property: about",
+    "domain" : "schema:Thing",
+    "isDefinedBy" : "<https://samanasara.org/Ontology/subjectOf>",
+    "label" : "subjectOf",
+    "range" : "schema:CreativeWork",
+    "inverseOf" : "schema:about"
+  }, {
+    "@id" : "schema:text",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : "The textual content of this CreativeWork.",
+    "domain" : "schema:CreativeWork",
+    "isDefinedBy" : "<http://samanasara.org/ontology/text>",
+    "label" : "text",
+    "range" : "xsd:string"
+  }, {
+    "@id" : "schema:translationOfWork",
+    "@type" : "owl:InverseFunctionalProperty",
+    "comment" : "The work that this work has been translated from. E.g. 物种起源 is a translationOf “On the Origin of Species”.",
+    "domain" : "schema:CreativeWork",
+    "isDefinedBy" : "<http://samanasara.org/ontology/translationOfWork>",
+    "label" : "workTranslation",
+    "range" : "schema:CreativeWork"
+  }, {
+    "@id" : "schema:translator",
+    "@type" : "owl:ObjectProperty",
+    "comment" : "Organization or person who adapts a creative work to different languages, regional differences and technical requirements of a target market, or that translates during some event.",
+    "domain" : "schema:CreativeWork",
+    "isDefinedBy" : "<http://samanasara.org/ontology/translatort>",
+    "label" : "translator",
+    "range" : "_:b1"
+  }, {
+    "@id" : "schema:url",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : "URL of the item",
+    "domain" : "owl:Thing",
+    "isDefinedBy" : "<https://samanasara.org/Ontology/url>",
+    "label" : "url",
+    "range" : "xsd:string"
+  }, {
+    "@id" : "schema:version",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : "The version of the CreativeWork embodied by a specified resource.",
+    "domain" : "schema:CreativeWork",
+    "isDefinedBy" : "<http://samanasara.org/ontology/tversion>",
+    "label" : "version",
+    "range" : "xsd:string"
+  }, {
+    "@id" : "schema:workTranslation",
+    "@type" : "owl:InverseFunctionalProperty",
+    "comment" : "A work that is a translation of the content of this work. E.g. 西遊記 has an English workTranslation “Journey to the West”, a German workTranslation “Monkeys Pilgerfahrt” and a Vietnamese translation Tây du ký bình khảo.\nInverse property: translationOfWork",
+    "domain" : "schema:CreativeWork",
+    "isDefinedBy" : "<http://samanasara.org/ontology/workTranslation>",
+    "label" : "workTranslation",
+    "range" : "schema:CreativeWork",
+    "inverseOf" : "schema:translationOfWork"
+  } ],
+  "@context" : {
+    "inverseOf" : {
+      "@id" : "http://www.w3.org/2002/07/owl#inverseOf",
+      "@type" : "@id"
+    },
+    "range" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#range",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "domain" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#domain",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "subClassOf" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "@type" : "@id"
+    },
+    "rest" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest",
+      "@type" : "@id"
+    },
+    "first" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#first",
+      "@type" : "@id"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "unionOf" : {
+      "@id" : "http://www.w3.org/2002/07/owl#unionOf",
+      "@type" : "@id"
+    },
+    "schema" : "http://schema.org/",
+    "vso" : "http://samanasara.org/ontology/VinayaStudiesOntology#",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "owl" : "http://www.w3.org/2002/07/owl#",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#"
+  }
+}
