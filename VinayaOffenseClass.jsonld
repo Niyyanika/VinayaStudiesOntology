@@ -1,0 +1,43 @@
+{
+  {
+    "@id" : "vcore:VinayaOffenseClass_Adhikaranasamatha",
+    "@type" : "http://samanasara.org/ontology/VinayaStudiesOntology#VinayaOffenseClass",
+    "comment" : "There are seven adhikaraṇasamathadhamma, “principles for the settling of legal issues”, which are the same for the nuns and the monks. These are not rules in the ordinary sense and as such fall outside of the classification into serious and light offenses. Instead, they set out the proper methods for dealing with legal issues. The detailed explanation for these is found in the Samathakkhandhaka. The legal issues to be settled through these principles fall into four categories: disputes, accusations, offenses, and proceedings. “Proceedings” includes monastic procedures such as ordination and the keeping of the observance day (uposatha).",
+    "label" : "Adhikaraṇasamatha"
+  }, {
+    "@id" : "vcore:VinayaOffenseClass_Aniyata",
+    "@type" : "http://samanasara.org/ontology/VinayaStudiesOntology#VinayaOffenseClass",
+    "comment" : "The rules in this category are known in Pali as aniyata, “undetermined”. There are two such rules for the bhikkhus, but none for the bhikkhunis. These are procedures to establish a course of action when a bhikkhu is accused of behaving in a sexually inappropriate way with a woman.",
+    "label" : "Aniyata"
+  }, {
+    "@id" : "vcore:VinayaOffenseClass_NissaggiyaPacittiya",
+    "@type" : "http://samanasara.org/ontology/VinayaStudiesOntology#VinayaOffenseClass",
+    "comment" : "The rules in this category are known in Pali as nissaggiya pācittiya, “entailing relinquishment and confession”. There are thirty such rules for the nuns, the same number as for the monks, although only eighteen are held in common. These rules, together with the remaining rules of the Monastic Code, are classed as light offenses, lahukāpatti. For light offenses there is usually no penalty apart from confession. For the nissaggiya pācittiyas, however, any item involved in the committing of an offense must be relinquished. Once the offense has been confessed, the item is, with a few exceptions, returned to the offender.",
+    "label" : "Nissaggiya Pācittiya"
+  }, {
+    "@id" : "vcore:VinayaOffenseClass_Pacittiya",
+    "@type" : "http://samanasara.org/ontology/VinayaStudiesOntology#VinayaOffenseClass",
+    "comment" : "The rules in this category are known in Pali as pācittiya, “entailing confession”. There are one hundred and sixty-six such rules for the nuns, seventy of which are shared with the monks. This is the largest class of rules in the Monastic Code. These rules, together with all the other rules apart from those entailing expulsion and suspension, are classed as light offenses, lahukāpatti. For light offenses there is no penalty apart from confession.",
+    "label" : "Pācittiya"
+  }, {
+    "@id" : "vcore:VinayaOffenseClass_Parajika",
+    "@type" : "http://samanasara.org/ontology/VinayaStudiesOntology#VinayaOffenseClass",
+    "comment" : "The rules in this category are known in Pali as pārājika. The exact meaning of the Pali word is disputed, but there is no doubt that it refers to expulsion from the monastic Sangha. There are eight such rules for the bhikkhunis, four of which are shared with the bhikkhus. Anyone who breaches any of these rules immediately loses their status as a fully ordained monastic. They are expelled from the Sangha and ineligible for re-ordination for the rest of their life. The pārājikas, together with the next category of rules, the saṅghādisesas, are collectively known as serious offenses, garukāpatti. These rules are the most fundamental ones for the proper living of the monastic life.",
+    "label" : "Pārājika"
+  }, {
+    "@id" : "vcore:VinayaOffenseClass_Patidesaniya",
+    "@type" : "http://samanasara.org/ontology/VinayaStudiesOntology#VinayaOffenseClass",
+    "comment" : "The rules in this category are known in Pali as pāṭidesanīya, “entailing acknowledgement”. There are eight such rules for the bhikkhunīs. These eight rules for the bhikkhunīs are equivalent to a single rule for the bhikkhus (bhikkhu-pācittiya 39). In summary, they say that a bhikkhunī who asks for special food must acknowledge the offense. There are four such rules for the bhikkhus, none of which are shared with the bhikkhunīs. What distinguishes these bhikkhu rules from the pācittiyas is the manner of confession. For these rules the confession is done using a unique formula, with the second rule being the only one in the Monastic Code where all the bhikkhu offenders confess together as a group.",
+    "label" : "Pāṭidesanīya"
+  }, {
+    "@id" : "vcore:VinayaOffenseClass_Sanghadisesa",
+    "@type" : "http://samanasara.org/ontology/VinayaStudiesOntology#VinayaOffenseClass",
+    "comment" : "The rules in this category are known in Pali as saṅghādisesa. The meaning of the word is disputed, but according to the commentary it means that the Sangha is required at the beginning (ādi) and for the rest (sesa) of the procedure. There are seventeen such rules for the nuns, seven of which are shared with the monks. Offenders must undergo a period of probation before being rehabilitated to their former status in the Sangha.",
+    "label" : "Sańghāadisesa"
+  }, {
+    "@id" : "vcore:VinayaOffenseClass_Sekhiya",
+    "@type" : "http://samanasara.org/ontology/VinayaStudiesOntology#VinayaOffenseClass",
+    "comment" : "The rules in this category are known in Pali as sekhiya, “involving training”. There are seventy-five such rules, and they are the same both for the monks and the nuns. The sekhiyas are mostly rules of etiquette. Breaking a sekhiya is only considered to be a transgression if the offender is acting out of disrespect for the rule.",
+    "label" : "Sekhiya"
+  }
+}
